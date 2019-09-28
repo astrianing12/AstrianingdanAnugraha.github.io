@@ -1,0 +1,133 @@
+
+
+body {
+    background-image: url(4.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.register {
+    width: 400px;
+    margin: 100px auto;
+    font-size: 17px;
+}
+
+.register-user,
+.register p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.register-user {
+    background: #4b4b4b;
+    padding: 20px;
+    font-size: 1.4em;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.register-isi {
+    background: rgba(121, 122, 122, 0.7);
+    padding: 12px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.register p {
+    padding: 12px;
+}
+
+.register input {
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    padding: 16px;
+    outline: 0;
+    font-size: 0.95em;
+}
+
+.register input[type="username"],
+.register input[type="password"],
+.register input [type="alamat"] {
+    background: white;
+    border-color: gray;
+    color: black;
+}
+
+.register input[type="username"]:focus,
+.register input[type="password"]:focus,
+.register input [type="alamat"] : focus {
+    border-color: black;
+}
+
+.register input[type="submit"] {
+    background: #4b4b4b;
+    border-color: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.register input[type="submit"]:hover {
+    background: #414040;
+}
+
+.register input[type="submit"]:focus {
+    border-color: #414040;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.register a:hover {
+    color: #414040;
+}
+
+.user {
+    font-size: 20px;
+    color: white;   
+}
+
+.img {
+    width: 100px;
+    height: auto;
+    float: right;
+    margin-right: 117px;
+}
+::-webkit-register-isi{
+   color: #808080;
+   text-align: center;
+
+}
+
+.register-isi{
+   color: #808080;
+   text-align: center;
+}
+
+
+@media (max-width:420px){
+    .register{
+        width: 250px;
+        font-size: 14px;
+        margin: 150px auto;
+    }
+}
+
+@media (max-width:720px){
+    .register{
+        width: 300px;
+        font-size: 14px;
+        margin: 150px auto;
+    }
+}
