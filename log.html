@@ -11,7 +11,7 @@
 <body>
     <div class="LogIn">
         <h2 class="Log In-user"> Sign Up</h2>
-        <form name="form" class="register-isi" action="Lenjelenan.html" onSubmit="validateForm()">
+        <form name="form" class="register-isi" method="POST">
             <p>
                 <input type="nama" name="nama" id="nama" placeholder="Nama Lengkap">
             </p>
@@ -20,14 +20,14 @@
             </p>
 
             <p>
-                <input type="jenis kelamin" name="jenis kelamin" id="Jenis kelamin" placeholder="jenis kelamin">
+                <input type="jenis kelamin" name="Jeniskelamin" id="Jeniskelamin" placeholder="jenis kelamin">
             </p>
              <p>
-                <input type="alamat" name="alamat" id="no.Handphone" placeholder="No.Handphone">
+                <input type="alamat" name="noHandphone" id="noHandphone" placeholder="No.Handphone">
             </p>
             <p>
-                <input type="submit" value="Login"><br>
-                <a href="Lupa Password.html">Lupa Password?</a>
+                <input type="button" value="Login" onclick="validateForm()"><br>
+                <a href="sign Up.html">bikin akun baru?</a>
             </p>
 
         </form>
@@ -35,11 +35,17 @@
     </div>
     <div class="user">
 </body>
-<script>
+<script type="text/javascript">
 function validateForm() {
-  var x = document.forms["form"]["nama"].value;
-  if (x == "") {
+  var nama = document.forms["form"]["nama"].value;
+  var alamat = document.forms["form"]["alamat"].value;
+  var Jeniskelamin = document.forms["form"]["Jeniskelamin"].value;
+  var noHandphone = document.forms["form"]["noHandphone"].value;
+  if (nama == "" && alamat =="" && Jeniskelamin =="" && noHandphone =="" ) {
     alert("Name must be filled out");
+  }else {
+    alert("Succes");
+    window.location.href = 'Lenjelenan.html';
     return false;
   }
 }
