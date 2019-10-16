@@ -36,7 +36,10 @@ body {
     padding: 12px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-}
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+  }
 
 .register p {
     padding: 12px;
@@ -95,7 +98,7 @@ a {
 
 .user {
     font-size: 20px;
-    color: white;   
+    color: white;
 }
 
 .img {
@@ -115,6 +118,10 @@ a {
    text-align: center;
 }
 
+.LogIn{
+  width: 300px;
+  margin: 10px auto;
+}
 
 @media (max-width:420px){
     .register{

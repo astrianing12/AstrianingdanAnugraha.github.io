@@ -63,7 +63,9 @@
 }
 .content{
 	width:100%;
-	height:500 auto;
+	float: left;
+	height:auto;
+	position: absolute;
 }
 .text{
 	font-family:"Courier New", Courier, monospace;
@@ -72,9 +74,12 @@
 	margin-right:50px;
 }
 .text ul{
+	float: left;
+	width: 300px;
 	list-style:none;
 	outline:none;
-	margin-right:300px;
+
+	margin-right:10px;
 }
 .text ul li{
  color:#000000;
@@ -141,7 +146,8 @@
 	width:100%;
 	height:120px;
 	background:url(images/about_1.png);
-	margin-top:2px;
+	position: fixed;
+	bottom: 0;
 }
 .garis-bawah{
 	width:auto;

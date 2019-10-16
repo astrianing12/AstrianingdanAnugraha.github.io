@@ -9,9 +9,9 @@
 
 </head>
 <body>
-    <div class="Log In">
+    <div class="LogIn">
         <h2 class="Log In-user"> Sign Up</h2>
-        <form class="register-isi" action="Lenjelenan.html" onSubmit="return validasi()">
+        <form name="form" class="register-isi" action="Lenjelenan.html" onSubmit="validateForm()">
             <p>
                 <input type="nama" name="nama" id="nama" placeholder="Nama Lengkap">
             </p>
@@ -35,4 +35,13 @@
     </div>
     <div class="user">
 </body>
+<script>
+function validateForm() {
+  var x = document.forms["form"]["nama"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
 </html>
